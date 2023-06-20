@@ -14,9 +14,8 @@ form.addEventListener('submit', async (event) => {
     const response = await fetch('http://localhost:3000/people/register', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*'
+        'Content-Type': 'application/json'
       },
-      mode: "no-cors",
       body: JSON.stringify({ nickname, email, password })
     });
 
