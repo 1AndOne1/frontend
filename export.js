@@ -16,6 +16,7 @@ form.addEventListener('submit', async (event) => {
       headers: {
         'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*'
       },
+      mode:'no-cors',
       body: JSON.stringify({ nickname, email, password })
     });
 
