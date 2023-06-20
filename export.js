@@ -11,7 +11,7 @@ form.addEventListener('submit', async (event) => {
   const password = formData.get('password');
 
   try {
-    const response = await fetch('https://localhost:3000/people/register', {
+    const response = await fetch('http://localhost:3000/people/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -37,7 +37,7 @@ login.addEventListener('submit',async(event)=>{
   const password = formLogin.get('password');
   
   try {
-    const responseLog = await fetch('https://localhost:3000/people/login', {
+    const responseLog = await fetch('http://localhost:3000/people/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
